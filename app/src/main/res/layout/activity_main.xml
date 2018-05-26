@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignStart="@id/layout_1"
+        android:layout_above="@id/layout_1"
+        android:background="@drawable/logo"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_above="@id/layout_2">
+
+        <EditText
+            android:id="@+id/textUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="用户名/邮箱/手机号"
+            android:textColorHint="#99ffffff"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:theme="@style/EditTextTheme"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/btn_login">
+
+        <EditText
+            android:id="@+id/textPass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:hint="密码"
+            android:textColorHint="#99ffffff"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:theme="@style/EditTextTheme"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:text="登  陆"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/bg_btn1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/btn_login"
+        android:layout_alignStart="@id/btn_login"
+        android:text=" 注  册"
+        android:textSize="15sp"
+        android:textColor="#00ff6a"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/btn_login"
+        android:layout_alignEnd="@id/btn_login"
+        android:text="找  回 "
+        android:textSize="15sp"
+        android:textColor="#00ff6a"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="AirPush once for everything in chaos."
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>
