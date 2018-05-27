@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String user = textUser.getText().toString();
                 String pass = textPass.getText().toString();
-                if (!user.equals("root") && !pass.equals("root")) {
+                if (user.equals("root") && pass.equals("root")) {
                     Intent intent = new Intent(MainActivity.this, SecActivity.class);
                     startActivity(intent);
 
